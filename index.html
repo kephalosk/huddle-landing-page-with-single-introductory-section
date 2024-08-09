@@ -4,15 +4,104 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
         <title>kephalosk | Huddle Landing Page</title>
         <style>
             .attribution {
+                color: hsl(300, 69%, 71%);
                 font-size: 11px;
                 text-align: center;
             }
 
-            .attribution a { color:
-                    hsl(228, 45%, 44%);
+            .attribution a {
+                color: hsl(100, 50%, 50%);
+            }
+
+            .content {
+                align-items: center;
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: center;
+            }
+
+            .contentRight {
+                margin-left: 50px;
+            }
+
+            .icon {
+                color: hsl(0, 0%, 100%);
+                font-weight: bold;
+                margin: 12px 24px;
+            }
+
+            .icon:hover {
+                color: hsl(300, 69%, 71%);
+            }
+
+            .logo {
+                margin-bottom: 75px;
+            }
+
+            .logo img {
+                height: 50px;
+                width: auto;
+            }
+
+            .socials {
+                width: 100%;
+                align-items: end;
+                display: flex;
+                justify-content: end;
+            }
+
+            body {
+                align-items: center;
+                background-color: hsl(257, 40%, 49%);
+                background-image: url('images/bg-desktop.svg');
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                font-family: "Open Sans",sans-serif;
+                justify-content: center;
+                margin: 0;
+            }
+
+            button {
+                background-color: hsl(0, 0%, 100%);
+                border-radius: 50px;
+                border: 0;
+                box-shadow: 2px 5px 20px -7px hsl(0, 0%, 0%);
+                color: hsl(257, 40%, 49%);
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 32px;
+                padding: 16px 48px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: hsl(300, 69%, 71%);
+                color: hsl(0, 0%, 100%);
+            }
+
+            h1 {
+                color: hsl(0, 0%, 100%);
+                font-family: Poppins,sans-serif;
+                font-size: 50px;
+            }
+
+            main {
+                align-items: center;
+                display: grid;
+                grid-template-rows: repeat(3, auto);
+                margin: 60px 80px 45px 80px;
+            }
+
+            p {
+                color: hsl(0, 0%, 100%);
+                letter-spacing: 1px;
+                line-height: 150%;
             }
         </style>
     </head>
@@ -35,9 +124,9 @@
                 </div>
             </section>
             <div class="socials">
-                <img alt="facebook icon">
-                <img alt="X icon">
-                <img alt="instagramm icon">
+                <label class="icon iconFB">FB</label>
+                <label class="icon iconX">X</label>
+                <label class="icon iconIG">IG</label>
             </div>
         </main>
         <footer class="attribution">

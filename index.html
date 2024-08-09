@@ -21,12 +21,27 @@
             .content {
                 align-items: center;
                 display: grid;
-                grid-template-columns: auto auto;
+                grid-template-columns: 1fr 1fr;
                 justify-content: center;
+
+                @media (max-width: 750px) {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            .contentLeft img{
+                width: 100%;
             }
 
             .contentRight {
                 margin-left: 50px;
+
+                @media (max-width: 750px) {
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 0;
+                    text-align: center;
+                }
             }
 
             .icon {
@@ -49,7 +64,7 @@
             }
 
             .logo {
-                margin-bottom: 75px;
+                margin-bottom: 50px;
             }
 
             .logo img {
@@ -62,6 +77,13 @@
                 align-items: end;
                 display: flex;
                 justify-content: end;
+                margin-top: 24px;
+
+                @media (max-width: 750px) {
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 48px;
+                }
             }
 
             body {
@@ -74,6 +96,10 @@
                 font-family: "Open Sans",sans-serif;
                 justify-content: center;
                 margin: 0;
+
+                @media (max-width: 450px) {
+                    background-image: url('images/bg-mobile.svg');
+                }
             }
 
             button {
